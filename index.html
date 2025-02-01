@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nature's Platter</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style>
@@ -14,6 +14,8 @@
             --color-primary: rgb(23, 152, 0);
             --color-secondary: #111111;
             --color-rice: #EFEBE3;
+            --color-litegreen: #63b76d;
+            --color-liteblue: #2a4d97;
             --font-sora: "Sora", "serif";
         }
     </style>
@@ -91,13 +93,11 @@
                 <div class="mx-[5%]">
                     <h3 class="text-primary font-semibold text-xl md:text-3xl pt-13 md:pt-28 mb-8 md:mb-12">Popular Products</h3>
                     <div class="lg:max-w-screen-2xl mx-auto lg:grid lg:grid-cols-3 lg:gap-6 pb-13 md:pb-28">
-                        <div>
-                            <div class="bg-linear-to-r from-green-500 to-green-200 rounded-xl">
-                                <div class="bg-[url(assets/vegetable-offer.png)] bg-no-repeat bg-right-bottom p-7 space-y-4 sm:row-span-3 mb-6">
-                                    <h4 class="text-white text-xl md:text-2xl font-semibold">30% off</h4>
-                                    <p class="font-light md:text-base">Discover a world of treats, toys, and essentials handpicked for</p>
-                                    <button class="px-7 py-2 border-1 border-primary rounded-lg text-xl text-secondary bg-white mb-36">Buy Now</button>
-                                </div>
+                        <div class="bg-linear-to-r from-green-500 to-green-200 rounded-xl">
+                            <div class="bg-[url(assets/vegetable-offer.png)] bg-no-repeat bg-right-bottom p-7 space-y-4 sm:row-span-3 mb-6 sm:mb-0">
+                                <h4 class="text-white text-xl md:text-2xl font-semibold">30% off</h4>
+                                <p class="font-light md:text-base">Discover a world of treats, toys, and essentials handpicked for</p>
+                                <button class="px-7 py-2 border-primary rounded-lg text-xl text-secondary bg-white mb-36">Buy Now</button>
                             </div>
                         </div>
                         <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 lg:gap-6 lg:col-span-2">
@@ -200,6 +200,28 @@
             <div class="lg:max-w-screen-2xl mx-auto mt-12 md:mt-32">
                 <div class="mx-[5%]">
                     <h3 class="text-primary font-semibold text-xl md:text-3xl pt-4 md:pt-28 mb-8 md:mb-12">Arrival & Offers</h3>
+                </div>
+                <div class="grid grid-cols-1 gap-4 lg:grid-cols-7 lg:gap-6 mx-[5%]">
+                    <div class="bg-green-900 flex rounded-xl lg:col-span-4">
+                        <div class="w-3/5 space-y-4 sm:space-y-8 pt-5 pl-5 pb-5 sm:pt-12 sm:pl-12 sm:pt-12">
+                            <img src="assets/dawat-logo.png" alt="" class="w-36 sm:w-60">
+                            <button class="px-5 sm:px-7 py-2 sm:py-3 bg-litegreen rounded-lg text-white text-sm sm:text-2xl font-light">Cook Exotic Dishes</button>
+                            <h4 class="text-xl sm:text-4xl text-white">Up to <span class="font-semibold">20% OFF</span></h4>
+                        </div>
+                        <div class="w-2/5 h-auto pt-6 pb-2 lg:pb-0">
+                            <img src="assets/dawat-mock-up.png" alt=""class="w-full">
+                        </div>
+                    </div>
+                    <div class="bg-blue-950 flex rounded-xl lg:col-span-3">
+                        <div class="w-3/5 space-y-2 sm:space-y-8 pt-2 pl-5 pb-5 sm:pt-12 sm:pl-12 sb:pt-12">
+                            <img src="assets/india-gate-logo.png" alt="" class=" h-20 w-20 sm:w-32">
+                            <button class="px-5 sm:px-7 py-2 sm:py-3 bg-liteblue rounded-lg text-white text-sm sm:text-2xl font-light">World's No.1 Rice</button>
+                            <h4 class="text-xl sm:text-4xl text-white">Up to <span class="font-semibold">40% OFF</span></h4>
+                        </div>
+                        <div class="w-2/5 h-auto pl-8 pt-4 pb-2">
+                            <img src="assets/india-gate-mock-up.png" alt=""class="w-24 lg:w-44">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
